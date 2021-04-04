@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div class="top-nav">
-      <div class="logo-wrapper">Logo</div>
-      <div class="nav-wrapper">
-        Nav
-      </div>
-    </div>
+    <Topnav />
     <div class="banner">
       <h2>Ui</h2>
       <h3>关于 ui</h3>
@@ -19,8 +14,11 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+import Topnav from '../components/Topnav.vue'
+
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'Home',
+  components: {Topnav},
   props: {
     msg: {
       type: String,

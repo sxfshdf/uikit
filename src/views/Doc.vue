@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div class="top-nav">
-      <div class="logo-wrapper">Logo</div>
-      <div class="nav-wrapper">
-        Nav
-      </div>
-    </div>
+   <Topnav />
     <div class="content-wrapper">
       <aside>菜单</aside>
       <main>内容</main>
@@ -15,7 +10,9 @@
 
 <script>
   import {defineComponent} from 'vue'
+  import Topnav from '../components/Topnav.vue'
   export default defineComponent({
-    name: 'test'
+    name: 'Doc',
+    components: {Topnav}
   })
 </script>
