@@ -8,10 +8,10 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: () => import('./views/Home.vue')
+      component: () => import('src/views/Home.vue')
     }, {
       path: '/doc',
-      component: () => import('./views/Doc.vue')
+      component: () => import('src/views/Doc.vue')
     }
   ]
 })

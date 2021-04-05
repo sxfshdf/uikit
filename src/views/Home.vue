@@ -6,28 +6,21 @@
       <h3>关于 ui</h3>
       <p class="content">
         <a href="">Github</a>
-        <a href="">Start</a>
+        <router-link to="/doc">Start</router-link>
       </p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
-import Topnav from '../components/Topnav.vue'
+import { defineComponent } from 'vue'
+import Topnav from 'src/components/Topnav.vue'
 
 export default defineComponent({
   name: 'Home',
   components: {Topnav},
-  props: {
-    msg: {
-      type: String,
-      required: true
-    }
-  },
   setup: () => {
-    const count = ref(0)
-    return { count }
+
   }
 })
 </script>

@@ -3,13 +3,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './views/Home.vue'
+import { defineComponent, ref, Ref, provide } from 'vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    const menuVisible = ref<Ref<Boolean>>(false)
+    provide('menuVisible', menuVisible)
   }
 })
 </script>
@@ -17,4 +17,5 @@ export default defineComponent({
 <style lang="scss">
   @import './assets/css/common.scss';
   @import './assets/css/base.scss';
+  @import './assets/css/variables.scss';
 </style>

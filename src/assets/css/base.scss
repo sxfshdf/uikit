@@ -1,3 +1,9 @@
+@import './variables.scss';
+
+html {
+  font-size: $browser-default-font-size;
+}
+
 *, *:after, *:before {
   padding: 0;
   margin: 0;
